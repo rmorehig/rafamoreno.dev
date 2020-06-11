@@ -4,4 +4,4 @@
 
 My personal website running on [Gatsby](https://gatsby.com) and deployed deployed to the cloud via [Netlify](https://netlify.com).
 
-https://rafamoreno.dev
+https://www.rafamoreno.dev
