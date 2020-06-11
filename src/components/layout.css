@@ -1,0 +1,21 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: inherit;
+}
+
+body {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  -webkit-font-smoothing: antialiased;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+}

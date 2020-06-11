@@ -1,7 +1,8 @@
 import React from "react"
 import { Link } from "gatsby"
 
-import { rhythm, scale } from "../utils/typography"
+import { rhythm } from "../utils/typography"
+import "./layout.css"
 
 const Layout = ({ location, title, children }) => {
   const rootPath = `${__PATH_PREFIX__}/`
@@ -9,17 +10,10 @@ const Layout = ({ location, title, children }) => {
 
   if (location.pathname === rootPath) {
     header = (
-      <h1
-        style={{
-          ...scale(1.5),
-          marginBottom: rhythm(1.5),
-          marginTop: 0,
-        }}
-      >
+      <h1>
         <Link
           style={{
             boxShadow: `none`,
-            color: `inherit`,
           }}
           to={`/`}
         >
@@ -31,14 +25,12 @@ const Layout = ({ location, title, children }) => {
     header = (
       <h3
         style={{
-          fontFamily: `Montserrat, sans-serif`,
           marginTop: 0,
         }}
       >
         <Link
           style={{
             boxShadow: `none`,
-            color: `inherit`,
           }}
           to={`/`}
         >
@@ -53,15 +45,25 @@ const Layout = ({ location, title, children }) => {
         marginLeft: `auto`,
         marginRight: `auto`,
         maxWidth: rhythm(24),
+        minHeight: "100vh",
         padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
+        display: "flex",
+        flexDirection: "column",
       }}
     >
       <header>{header}</header>
-      <main>{children}</main>
+      <main style={{ flex: 1 }}>{children}</main>
       <footer>
-        © {new Date().getFullYear()}, Built with
+        Built with
         {` `}
-        <a href="https://www.gatsbyjs.org">Gatsby</a>
+        <a
+          href="https://www.gatsbyjs.org"
+          style={{ color: "#542c85", fontWeight: "bold" }}
+        >
+          Gatsby
+        </a>{" "}
+        and deployed via{" "}
+        <span style={{ color: "#00ad9f", fontWeight: "bold" }}>Netlify</span>
       </footer>
     </div>
   )
