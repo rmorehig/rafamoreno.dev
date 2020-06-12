@@ -72,7 +72,7 @@ const Header = ({ location }) => {
         >
           Github
         </a>
-        <a href={`https://github.com/${social.twitter}`}>Twitter</a>
+        <a href={`https://twitter.com/${social.twitter}`}>Twitter</a>
       </nav>
     </header>
   )
