@@ -35,7 +35,7 @@ export default {
   bodyWeight: "normal",
   boldWeight: 600,
   blockMarginBottom: 1 / 2,
-  overrideStyles: ({ rhythm }) => ({
+  overrideStyles: ({ rhythm, scale }) => ({
     h1: {
       paddingBottom: `calc(${rhythm(1 / 4)} - 1px)`,
       marginBottom: rhythm(1 / 2),
@@ -75,6 +75,9 @@ export default {
       marginRight: 0,
       marginLeft: 0,
       paddingLeft: `calc(${rhythm(1 / 2)} - 1px)`,
+    },
+    small: {
+      color: gray(47),
     },
   }),
 }

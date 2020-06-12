@@ -1,44 +1,10 @@
 import React from "react"
-import { Link } from "gatsby"
 
 import { rhythm } from "../utils/typography"
 import "./layout.css"
+import Header from "./header"
 
-const Layout = ({ location, title, children }) => {
-  const rootPath = `${__PATH_PREFIX__}/`
-  let header
-
-  if (location.pathname === rootPath) {
-    header = (
-      <h1>
-        <Link
-          style={{
-            boxShadow: `none`,
-          }}
-          to={`/`}
-        >
-          {title}
-        </Link>
-      </h1>
-    )
-  } else {
-    header = (
-      <h3
-        style={{
-          marginTop: 0,
-        }}
-      >
-        <Link
-          style={{
-            boxShadow: `none`,
-          }}
-          to={`/`}
-        >
-          {title}
-        </Link>
-      </h3>
-    )
-  }
+const Layout = ({ children, location }) => {
   return (
     <div
       style={{
@@ -51,7 +17,7 @@ const Layout = ({ location, title, children }) => {
         flexDirection: "column",
       }}
     >
-      <header>{header}</header>
+      <Header location={location} />
       <main style={{ flex: 1 }}>{children}</main>
       <footer>
         Built with

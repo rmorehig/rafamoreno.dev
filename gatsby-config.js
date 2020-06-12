@@ -6,10 +6,11 @@ module.exports = {
       fullName: `Rafa Moreno`,
       summary: `This is my personal website about frontend development`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.app/`,
+    description: `Rafa Moreno`,
+    siteUrl: `https://www.rafamoreno.dev`,
     social: {
-      twitter: `kylemathews`,
+      twitter: `rmorehig`,
+      github: `rmorehig`,
     },
   },
   plugins: [
@@ -61,11 +62,11 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `GatsbyJS`,
+        name: `rafamoreno.dev`,
+        short_name: `rafamoreno.dev`,
         start_url: `/`,
         background_color: `#ffffff`,
-        theme_color: `#663399`,
+        theme_color: `#1a202c`,
         display: `minimal-ui`,
         icon: `content/assets/gatsby-icon.png`,
       },
