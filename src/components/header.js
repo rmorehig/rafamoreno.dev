@@ -67,12 +67,18 @@ const Header = ({ location }) => {
       {header}
       <nav>
         <a
+          className="social__link"
           href={`https://github.com/${social.github}`}
           style={{ marginRight: rhythm(1 / 2) }}
         >
           Github
         </a>
-        <a href={`https://twitter.com/${social.twitter}`}>Twitter</a>
+        <a
+          className="social__link"
+          href={`https://twitter.com/${social.twitter}`}
+        >
+          Twitter
+        </a>
       </nav>
     </header>
   )

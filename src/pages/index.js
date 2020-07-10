@@ -1,4 +1,3 @@
-// Gatsby supports TypeScript natively!
 import React from "react"
 import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
@@ -15,7 +14,7 @@ const BlogIndex = ({ data, location }) => {
         const title = node.frontmatter.title || node.fields.slug
         return (
           <article key={node.fields.slug}>
-            <header>
+            <header className="post__header">
               <h3
                 style={{
                   marginBottom: rhythm(1 / 4),

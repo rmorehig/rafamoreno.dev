@@ -35,7 +35,7 @@ export default {
   bodyWeight: "normal",
   boldWeight: 600,
   blockMarginBottom: 1 / 2,
-  overrideStyles: ({ rhythm, scale }) => ({
+  overrideStyles: ({ rhythm }) => ({
     h1: {
       paddingBottom: `calc(${rhythm(1 / 4)} - 1px)`,
       marginBottom: rhythm(1 / 2),
@@ -64,9 +64,6 @@ export default {
       color: textColor,
       textDecoration: "none",
       fontWeight: 500,
-    },
-    "a:hover,a:active": {
-      textDecoration: "underline",
     },
     blockquote: {
       borderLeft: `4px solid ${gray(87)}`,

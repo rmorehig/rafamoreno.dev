@@ -15,7 +15,22 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-a,
-a:hover {
-  text-decoration: none;
+.social__link {
+  position: relative;
+}
+
+.social__link:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 60%;
+  left: -0.1em;
+  right: -0.1em;
+  bottom: 0;
+  transition: top 200ms cubic-bezier(0, 0.8, 0.13, 1);
+  background-color: #d6bcfa;
+}
+
+.social__link:hover:after {
+  top: 0%;
 }
